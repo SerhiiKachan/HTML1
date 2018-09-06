@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact form</title>
+    <style>
+        form {
+            width: 285px;
+        }
+
+        .button {
+            width: 100px;
+        }
+
+        label {
+            line-height: 2.5;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>User information</legend>
+            <label for="textfield">Name:</label>
+            <input type="text" id="textfield" value="" maxlength="25" required>
+            <br>
+            <label for="phone_number">Phone number:</label>
+            <input type="tel" id="phone_number" value="" required>
+            <br>
+            <label>Choose issue:</label>
+            <select>
+                <option value="personal">personal</option>
+                <option value="business">business</option>
+            </select>
+            <br> Call me back: <input type="checkbox" id="call_me_back" value="call" checked> <br>
+            <label for="choise">Description:</label><br>
+            <textarea name="textarea" id="choise" cols="25" rows="3" required></textarea>
+            <br>
+            <input class="button" type="submit" formaction="success.html" value="SUBMIT">
+        </fieldset>
+    </form>
+</body>
+
+</html>
